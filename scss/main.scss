@@ -33,6 +33,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    color: inherit;
+}
+
 .cursor,
 .cursor2,
 .cursor3 {
@@ -56,15 +60,34 @@ a {
     margin: 0.5rem;
 }
 
+//Nav
+.socials {
+    display: flex;
+    flex-direction: row-reverse;
+
+    img {
+        width: 3rem;
+        padding: 0.5rem;
+    }
+}
+
 // Intro Section
 .intro {
     text-align: center;
-}
+    display: flex;
+    justify-content: center;
 
-.intro .heading {
-    font-family: $heading-font;
-    font-size: 4rem;
-    color: $main;
+    .namecard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .heading {
+        font-family: $heading-font;
+        font-size: 4rem;
+        color: $main;
+    }
 }
 
 // Project Section
@@ -81,8 +104,7 @@ a {
 .proj-grid {
     display: flex;
 
-    .proj-tile {
-        
+    .proj-tile {        
         .proj-title {
             font-size: 1.25rem;
         }
@@ -98,8 +120,8 @@ a {
             border-radius: 2rem;
             color: $text-light;
         }
-        .proj-descrip {
+        // .proj-descrip {
 
-        }
+        // }
     }
 }
