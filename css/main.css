@@ -53,21 +53,6 @@ a:hover {
   margin: 0.5rem;
 }
 
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.socials img {
-  width: 3rem;
-  padding: 0.5rem;
-}
-
 .intro {
   text-align: center;
   display: -webkit-box;
@@ -95,6 +80,24 @@ a:hover {
   font-family: Black Delights;
   font-size: 4rem;
   color: #c25555;
+}
+
+.intro .socials {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  margin: 2rem;
+}
+
+.intro .socials img {
+  width: 3.5rem;
+  padding: 0.75rem;
 }
 
 .proj-nav {

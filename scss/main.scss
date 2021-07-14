@@ -60,17 +60,6 @@ a:hover {
     margin: 0.5rem;
 }
 
-//Nav
-.socials {
-    display: flex;
-    flex-direction: row-reverse;
-
-    img {
-        width: 3rem;
-        padding: 0.5rem;
-    }
-}
-
 // Intro Section
 .intro {
     text-align: center;
@@ -87,6 +76,19 @@ a:hover {
         font-family: $heading-font;
         font-size: 4rem;
         color: $main;
+    }
+
+    .socials {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        margin: 2rem;
+    
+        img {
+            width: 3.5rem;
+            padding: 0.75rem;
+        }
     }
 }
 
