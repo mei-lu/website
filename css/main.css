@@ -98,6 +98,11 @@ a:hover {
   font-family: Black Delights;
   font-size: 4rem;
   color: #e47e7e;
+  line-height: 4rem;
+}
+
+.intro .namecard .tagline {
+  font-size: 0.5rem;
 }
 
 .intro .namecard .intro-img {

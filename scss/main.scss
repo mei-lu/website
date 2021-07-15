@@ -90,6 +90,11 @@ a:hover {
             font-family: $heading-font;
             font-size: 4rem;
             color: $main;
+            line-height: 4rem;
+        }
+
+        .tagline {
+            font-size: 0.5rem;
         }
 
         .intro-img {
