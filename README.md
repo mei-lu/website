@@ -2,5 +2,5 @@
 
 ### Stack
 - Pug
-- Sass
+- SCSS
 - GSAP Animation Library
