@@ -15,9 +15,12 @@ head
 // Intro Section
 .container.intro
   .socials
-      img(src="./img/linkedin.svg" class="img-fluid" alt="Icon of LinkedIn")
-      img(src="./img/github.svg" class="img-fluid" alt="Icon of GitHub")
-      img(src="./img/resume.svg" class="img-fluid" alt="Icon of Resume")
+      a(href="https://linkedin.com/meil" target="_blank")
+        img(src="./img/linkedin.svg" class="img-fluid" alt="Icon of LinkedIn")
+      a(href="https://github.com/mei-lu" target="_blank")
+        img(src="./img/github.svg" class="img-fluid" alt="Icon of GitHub")
+      a(href="./files/Mei_Lu_Resume.pdf" target="_blank")
+        img(src="./img/resume.svg" class="img-fluid" alt="Icon of Resume")
 
   .namecard
     .intro-img
@@ -27,46 +30,46 @@ head
       .heading mei lu
       p CS Student @ UMD
       p I make programs, illustrations, and merch.
-  
-    //- button.action-button
-    //-   a(href='' src='./files/Mei_Lu_Resume.pdf' target='_blank') Resume
-    //- button.action-button Contact
-
+      a(href="mailto: meilu@umd.edu" target="_blank")
+        .button Get in touch
 
 
 // End Intro Section
-.proj-nav
-    .proj-tab All
-    .proj-tab Web
-    .proj-tab Scripting
-    .proj-tab Merch
+
+// Project Section
+.proj
+  .proj-nav
+      .proj-tab All
+      .proj-tab Web
+      .proj-tab Scripting
+      .proj-tab Merch
 
 
-.proj-grid
-  .proj-tile
-      .proj-title Verizon Software Engineering Intern
+  .proj-grid
+    .proj-tile
+        .proj-title Verizon Software Engineering Intern
+        .label-group
+          .proj-label Scripting
+        .proj-descrip Wrote python scripts to automate monitoring Fios video network health
+
+    .proj-tile
+      .proj-title Technica Hackathon Organizer
       .label-group
-        .proj-label Scripting
-      .proj-descrip Wrote python scripts to automate monitoring Fios video network health
+        .proj-label Web
+      .proj-descrip Tech team membe, organizing the world's largest hackathon for underrepresented people in tech
+    
+    .proj-tile
+      .proj-title Cottagecore Enamel Pin Collection
+      .label-group
+        .proj-label Merch
+      .proj-descrip Crowdfunding and manufacturing an enamel pin collection of 5 pins
 
-  .proj-tile
-    .proj-title Technica Hackathon Organizer
-    .label-group
-      .proj-label Web
-    .proj-descrip Tech team member for organizing the world's largest hackathon for underrepresented people in tech
-  
-  .proj-tile
-    .proj-title Cottagecore Enamel Pin Collection
-    .label-group
-      .proj-label Merch
-    .proj-descrip Crowdfunding and manufacturing an enamel pin collection of 5 pins
-
-  .proj-tile
-    .proj-title Lunar Banquet Fundraising
-    .label-group
-      .proj-label Web
-    .proj-descrip A visual, live fundraising platform to donate funds to Feeding America
-  
+    .proj-tile
+      .proj-title Lunar Banquet Fundraising
+      .label-group
+        .proj-label Web
+      .proj-descrip A visual, live fundraising platform for Chinese Student Association to collect funds for Feeding America
+    
   
 
 script(src='./js/animations.js')
