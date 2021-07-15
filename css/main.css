@@ -18,6 +18,30 @@ body {
   font-family: Work Sans;
   background-color: #fff7f6;
   color: #705052;
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 a {
@@ -123,6 +147,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 2rem 0;
 }
 
 .proj .proj-nav .proj-tab {
@@ -133,6 +158,11 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 2rem;
+}
+
+.proj .proj-grid .proj-tile {
+  width: 30rem;
 }
 
 .proj .proj-grid .proj-tile .proj-title {
