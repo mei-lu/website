@@ -1,6 +1,6 @@
-$main: #c25555;
-$accent: #d67d86;
-$background: rgb(255, 236, 236);
+$main: #e47e7e;
+$accent: #eea3a3;
+$background: rgb(255, 247, 246);
 $text-dark: #705052;
 $text-light: #fff;
 $heading-font: Black Delights;
@@ -81,7 +81,7 @@ a:hover {
     .socials {
         position: absolute;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         right: 0;
         margin: 2rem;
     

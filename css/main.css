@@ -16,7 +16,7 @@
 
 body {
   font-family: Work Sans;
-  background-color: #ffecec;
+  background-color: #fff7f6;
   color: #705052;
 }
 
@@ -45,7 +45,7 @@ a:hover {
 }
 
 .action-button {
-  background-color: #d67d86;
+  background-color: #eea3a3;
   color: #fff;
   border: none;
   border-radius: 1rem;
@@ -79,7 +79,7 @@ a:hover {
 .intro .heading {
   font-family: Black Delights;
   font-size: 4rem;
-  color: #c25555;
+  color: #e47e7e;
 }
 
 .intro .socials {
@@ -88,9 +88,9 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   right: 0;
   margin: 2rem;
 }
@@ -136,7 +136,7 @@ a:hover {
 }
 
 .proj-grid .proj-tile .proj-label {
-  background-color: #d67d86;
+  background-color: #eea3a3;
   padding: 0.25rem 1rem 0.25rem 1rem;
   border-radius: 2rem;
   color: #fff;
