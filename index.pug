@@ -12,40 +12,35 @@ head
 .cursor2
 .cursor3
 
-// Intro Section
-.container.intro
-  .socials
-      a(href="https://linkedin.com/meil" target="_blank")
-        img(src="./img/linkedin.svg" class="img-fluid" alt="Icon of LinkedIn")
-      a(href="https://github.com/mei-lu" target="_blank")
-        img(src="./img/github.svg" class="img-fluid" alt="Icon of GitHub")
-      a(href="./files/Mei_Lu_Resume.pdf" target="_blank")
-        img(src="./img/resume.svg" class="img-fluid" alt="Icon of Resume")
+.hero 
+  // Intro Section
+  .container.intro
+    .socials
+        a(href="https://linkedin.com/meil" target="_blank")
+          img(src="./img/linkedin.svg" class="img-fluid" alt="Icon of LinkedIn")
+        a(href="https://github.com/mei-lu" target="_blank")
+          img(src="./img/github.svg" class="img-fluid" alt="Icon of GitHub")
+        a(href="./files/Mei_Lu_Resume.pdf" target="_blank")
+          img(src="./img/resume.svg" class="img-fluid" alt="Icon of Resume")
 
-  .namecard
-    .intro-img
-      img(src="./img/mei-intro.svg" class="img-fluid" alt="Illustration of Mei")
+    .namecard.container
+      .intro-img
+        img(src="./img/mei-intro.svg" class="img-fluid" alt="Illustration of Mei")
 
-    .intro-text
-      .heading mei lu
-      .tagline 
-        p CS Student @ UMD, College Park
-      p I make programs, illustrations, and merch.
-      a(href="mailto: meilu@umd.edu" target="_blank")
-        .button Get in touch
+      .intro-text
+        .heading mei lu
+        .tagline 
+          p CS Student @ UMD, College Park
+        p I make programs, illustrations, and merch.
+        a(href="mailto: meilu@umd.edu" target="_blank")
+          .button Get in touch
 
-
-// End Intro Section
+  .expand-btn 
+    p See my work v
+  // End Intro Section
 
 // Project Section
 .proj
-  .proj-nav
-      .proj-tab All
-      .proj-tab Web
-      .proj-tab Scripting
-      .proj-tab Merch
-
-
   .proj-grid
     .proj-tile
         .proj-title Verizon Software Engineering Intern

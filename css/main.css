@@ -34,8 +34,8 @@
 
 body {
   font-family: Work Sans;
-  background-color: #fff7f6;
-  color: #705052;
+  background-color: #f0e2da;
+  color: #635a53;
   -webkit-animation: fadeInAnimation ease 2s;
           animation: fadeInAnimation ease 2s;
   -webkit-animation-iteration-count: 1;
@@ -59,7 +59,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e47e7e;
+  background: #9a87a8;
   border-radius: 10px;
 }
 
@@ -79,38 +79,50 @@ a:hover {
   transition: all 300ms linear;
 }
 
-/* Intro Section */
-.intro {
-  text-align: center;
-  padding: 3rem;
+/* Hero */
+.hero {
+  height: 100vh;
+  /* Intro Section */
 }
 
-.intro .namecard {
+.hero .intro {
+  height: 90vh;
+  text-align: center;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .intro .namecard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.intro .namecard .heading {
+.hero .intro .namecard .heading {
   font-family: Black Delights;
   font-size: 4rem;
-  color: #e47e7e;
+  color: #9a87a8;
   line-height: 4rem;
 }
 
-.intro .namecard .tagline {
+.hero .intro .namecard .tagline {
   font-size: 0.5rem;
 }
 
-.intro .namecard .intro-img {
+.hero .intro .namecard .intro-img {
   width: 15rem;
   margin: 2rem;
 }
 
-.intro .namecard .intro-text {
+.hero .intro .namecard .intro-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,8 +135,8 @@ a:hover {
           justify-content: center;
 }
 
-.intro .namecard .button {
-  background-color: #e47e7e;
+.hero .intro .namecard .button {
+  background-color: #9a87a8;
   color: #fff;
   border: none;
   border-radius: 1rem;
@@ -132,7 +144,7 @@ a:hover {
   margin: 0 6rem;
 }
 
-.intro .socials {
+.hero .intro .socials {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,9 +158,13 @@ a:hover {
   margin: 2rem;
 }
 
-.intro .socials img {
+.hero .intro .socials img {
   width: 3.5rem;
   padding: 0.75rem;
+}
+
+.hero .expand-btn {
+  text-align: center;
 }
 
 /* Project Section */
@@ -156,31 +172,19 @@ a:hover {
   padding: 0 6rem;
 }
 
-.proj .proj-nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 2rem 0;
-}
-
-.proj .proj-nav .proj-tab {
-  padding: 1rem;
-}
-
 .proj .proj-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0rem 2rem 0rem 2rem;
 }
 
 .proj .proj-grid .proj-tile {
-  width: 30rem;
+  margin: 2rem 2rem;
 }
 
 .proj .proj-grid .proj-tile .proj-title {
@@ -198,9 +202,14 @@ a:hover {
 }
 
 .proj .proj-grid .proj-tile .proj-label {
-  background-color: #eea3a3;
+  background-color: #c48c8c;
   padding: 0.25rem 1rem 0.25rem 1rem;
   border-radius: 2rem;
+  margin-top: 0.5rem;
   color: #fff;
+}
+
+.proj .proj-grid .proj-tile .proj-descrip {
+  margin-top: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
