@@ -34,7 +34,7 @@
 
 body {
   font-family: Work Sans;
-  background-color: #f0e2da;
+  background-color: #f5e4dc;
   color: #635a53;
   -webkit-animation: fadeInAnimation ease 2s;
           animation: fadeInAnimation ease 2s;
@@ -59,7 +59,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9a87a8;
+  background: #c48c8c;
   border-radius: 10px;
 }
 
@@ -88,7 +88,6 @@ a:hover {
 .hero .intro {
   height: 90vh;
   text-align: center;
-  padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,20 +105,60 @@ a:hover {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero .intro .namecard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .hero .intro .namecard .heading {
   font-family: Black Delights;
-  font-size: 4rem;
-  color: #9a87a8;
+  font-size: 8rem;
+  color: #5a392f;
   line-height: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero .intro .namecard .heading {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .hero .intro .namecard .heading {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .hero .intro .namecard .heading {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .hero .intro .namecard .heading {
+    font-size: 3.5rem;
+  }
 }
 
 .hero .intro .namecard .tagline {
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 .hero .intro .namecard .intro-img {
-  width: 15rem;
+  width: 25rem;
   margin: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .intro .namecard .intro-img {
+    width: 17rem;
+  }
 }
 
 .hero .intro .namecard .intro-text {
@@ -133,15 +172,22 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .intro .namecard .intro-text {
+    margin-left: 0;
+  }
 }
 
 .hero .intro .namecard .button {
-  background-color: #9a87a8;
-  color: #fff;
+  color: #635a53;
   border: none;
   border-radius: 1rem;
+  width: 100%;
+  text-align: center;
   padding: 0.5rem;
-  margin: 0 6rem;
 }
 
 .hero .intro .socials {
@@ -164,7 +210,23 @@ a:hover {
 }
 
 .hero .expand-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  margin-bottom: 1rem;
+  gap: .5rem;
+}
+
+.hero .expand-btn img {
+  width: 1.5rem;
 }
 
 /* Project Section */
@@ -189,6 +251,7 @@ a:hover {
 
 .proj .proj-grid .proj-tile .proj-title {
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .proj .proj-grid .proj-tile .label-group {
