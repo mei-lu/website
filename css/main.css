@@ -1,8 +1,4 @@
-@font-face {
-  font-family: Wickery;
-  src: url(fonts\WICKERY.ttf);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 @font-face {
   font-family: Black Delights;
   src: url(fonts\Black_Delights_Regular.ttf);
@@ -10,7 +6,7 @@
 
 @font-face {
   font-family: Work Sans;
-  font-weight: 500;
+  font-weight: 400;
   src: url(fonts\Work_Sans.ttf);
 }
 
@@ -33,7 +29,8 @@
 }
 
 body {
-  font-family: Work Sans;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
   background-color: #f5e4dc;
   color: #635a53;
   -webkit-animation: fadeInAnimation ease 2s;
@@ -148,6 +145,8 @@ a:hover {
 
 .hero .intro .namecard .tagline {
   font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 .hero .intro .namecard .intro-img {

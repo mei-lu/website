@@ -4,12 +4,9 @@ $background: #f5e4dc;
 $text-dark: #635a53;
 $text-light: #fff;
 $heading-font: Black Delights;
-$body-font: Work Sans;
+$body-font: 'Lato', sans-serif;
 
-@font-face {
-    font-family: Wickery;
-    src: url(fonts\WICKERY.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 @font-face {
     font-family: Black Delights;
@@ -18,7 +15,7 @@ $body-font: Work Sans;
 
 @font-face {
     font-family: Work Sans;
-    font-weight: 500;
+    font-weight: 400;
     src: url(fonts\Work_Sans.ttf);
 }
 
@@ -33,6 +30,7 @@ $body-font: Work Sans;
 
 body {
     font-family: $body-font;
+    font-weight: 500;
     background-color: $background;
     color: $text-dark;
 
@@ -125,6 +123,8 @@ a:hover {
 
             .tagline {
                 font-size: 1rem;
+                font-family: 'Lato', sans-serif;
+                font-weight: 300;
             }
 
             .intro-img {
