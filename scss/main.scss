@@ -86,11 +86,11 @@ a:hover {
         text-align: center;
         display: flex;
 
-
         .namecard {
             display: flex;
-            justify-content: center;
             align-items: center;
+            word-break: break-word;
+
 
             @media only screen and (max-width: 768px) {
                 flex-direction: column;
@@ -108,11 +108,15 @@ a:hover {
                     font-size: 6rem;
                 }
 
-                @media only screen and (max-width: 775px) {
+                @media only screen and (max-width: 992px) {
+                    font-size: 5rem;
+                }
+
+                @media only screen and (max-width: 768px) {
                     font-size: 4.5rem;
                 }
 
-                @media only screen and (max-width: 525px) {
+                @media only screen and (max-width: 576px) {
                     font-size: 4rem;
                 }
 
@@ -125,6 +129,11 @@ a:hover {
                 font-size: 1rem;
                 font-family: 'Lato', sans-serif;
                 font-weight: 300;
+                word-break: break-word;
+            }
+
+            .descrip {
+                margin: 1rem 0rem;
             }
 
             .intro-img {
@@ -137,23 +146,25 @@ a:hover {
             }
 
             .intro-text {
+                flex: 1;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                margin-left: 3rem;
-
-                @media only screen and (max-width: 768px) {
-                    margin-left: 0;
-                }
+                align-items: center;
             }
 
             .button {
                 color: $text-dark;
-                border: none;
-                border-radius: 1rem;
-                width: 100%;
+                border: 1px solid;
+                border-radius: 20rem;
                 text-align: center;
-                padding: 0.5rem;
+                padding: 0.5rem 1.5rem;
+                font-size: 0.6rem;
+                margin: 1rem 0rem;
+                
+                img {
+                    padding: 0.5rem
+                }
             }
 
         }

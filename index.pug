@@ -31,17 +31,22 @@ head
         .heading mei lu
         .tagline 
           p  COMPUTER SCIENCE STUDENT @ UMD, COLLEGE PARK
-        p i make programs, illustrations, and merch.
-        a(href="mailto: meilu@umd.edu" target="_blank")
-          .button get in touch
-
-  .expand-btn 
-    span see my work
+        .descrip 
+          p i make programs, illustrations, and merch. i'm currently a uni student 
+        
+        .button
+            a(href="mailto: meilu@umd.edu" target="_blank")
+              span GET IN TOUCH
+            a(href="mailto: meilu@umd.edu" target="_blank")
+              img(src="./img/email.svg" alt="Icon of email") 
+            
+  .expand-btn
+    a(href="#proj") see my work
     img(src="./img/downarrow.svg")
   // End Intro Section
 
 // Project Section
-.proj
+.proj#proj
   .proj-grid
     .proj-tile
         .proj-title Verizon | Software Engineering Intern
@@ -62,7 +67,9 @@ head
         .proj-label Web
       .proj-descrip A web platform collecting hundreds in donations for Feeding America in and displayed live stats. Made for a Chinese Student Association event that attracted more than 100 attendees.
     
-  
+.footer
+  span Copyright © 2021 Mei Lu. All Rights Reserved.
+
 
 script(src='./js/animations.js')
 script(src='./js/cursor.js')

@@ -94,12 +94,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  word-break: break-word;
 }
 
 @media only screen and (max-width: 768px) {
@@ -125,13 +123,19 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 992px) {
+  .hero .intro .namecard .heading {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .hero .intro .namecard .heading {
     font-size: 4.5rem;
   }
 }
 
-@media only screen and (max-width: 525px) {
+@media only screen and (max-width: 576px) {
   .hero .intro .namecard .heading {
     font-size: 4rem;
   }
@@ -147,6 +151,11 @@ a:hover {
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  word-break: break-word;
+}
+
+.hero .intro .namecard .descrip {
+  margin: 1rem 0rem;
 }
 
 .hero .intro .namecard .intro-img {
@@ -161,6 +170,9 @@ a:hover {
 }
 
 .hero .intro .namecard .intro-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,21 +183,22 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 3rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .hero .intro .namecard .intro-text {
-    margin-left: 0;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .intro .namecard .button {
   color: #635a53;
-  border: none;
-  border-radius: 1rem;
-  width: 100%;
+  border: 1px solid;
+  border-radius: 20rem;
   text-align: center;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.6rem;
+  margin: 1rem 0rem;
+}
+
+.hero .intro .namecard .button img {
   padding: 0.5rem;
 }
 
