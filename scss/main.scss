@@ -117,7 +117,7 @@ a:hover {
                 line-height: 4rem;
                 margin-bottom: 1.5rem;
 
-                @media only screen and (max-width: 1000px) {
+                @media only screen and (max-width: 1200px) {
                     font-size: 6rem;
                 }
 
@@ -154,25 +154,30 @@ a:hover {
             }
 
             .intro-img {
-                width: 30%;
+                width: 25rem;
                 padding: 2rem 0rem;
                 margin: 2rem;
 
                 @media only screen and (max-width: 992px) {
-                    width: 40%;
+                    width: 20rem;
                 }
 
                 @media only screen and (max-width: 768px) {
                     width: 17rem;
+                    margin: 0rem;
                 }
             }
 
             .intro-text {
+                flex: 0.5;
                 display: flex;
-                width: 50%;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                @media only screen and (max-width: 992px) {
+                    flex: 0.9;
+                }
             }
 
             .button {
