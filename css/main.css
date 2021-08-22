@@ -191,6 +191,12 @@ a:hover {
   margin: 2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero .intro .namecard .intro-img {
+    width: 22rem;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .hero .intro .namecard .intro-img {
     width: 20rem;

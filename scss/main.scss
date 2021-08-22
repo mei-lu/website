@@ -158,6 +158,10 @@ a:hover {
                 padding: 2rem 0rem;
                 margin: 2rem;
 
+                @media only screen and (max-width: 1024px) {
+                    width: 22rem;
+                }
+
                 @media only screen and (max-width: 992px) {
                     width: 20rem;
                 }
