@@ -111,11 +111,9 @@ a:hover {
 }
 
 .hero .intro .namecard {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2rem;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -127,19 +125,11 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .hero .intro .namecard {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    grid-gap: 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-}
-
-.hero .intro .namecard div.intro-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .hero .intro .namecard .heading {
@@ -196,17 +186,14 @@ a:hover {
 }
 
 .hero .intro .namecard .intro-img {
-  margin: auto;
-  width: 70%;
-  height: 100%;
-  padding: 3rem 0rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 30%;
+  padding: 2rem 0rem;
+  margin: 2rem;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 992px) {
   .hero .intro .namecard .intro-img {
-    width: 80%;
+    width: 40%;
   }
 }
 
@@ -220,6 +207,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
