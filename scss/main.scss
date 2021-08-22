@@ -87,13 +87,21 @@ a:hover {
         display: flex;
 
         .namecard {
-            display: flex;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
             align-items: center;
+            justify-content: center;
             word-break: break-word;
 
-
             @media only screen and (max-width: 768px) {
-                flex-direction: column;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 0rem;
+            }
+
+            div.intro-img {
+                display: flex;
+                align-items: center;
             }
 
 
@@ -134,11 +142,22 @@ a:hover {
 
             .descrip {
                 margin: 1rem 0rem;
+
+                p {
+                    margin: 0rem;
+                }
             }
 
             .intro-img {
-                width: 25rem;
-                margin: 2rem;
+                margin: auto;
+                width: 70%;
+                height: 100%;
+                padding: 3rem 0rem;
+                object-fit: cover;
+
+                @media only screen and (max-width: 1200px) {
+                    width: 80%;
+                }
 
                 @media only screen and (max-width: 768px) {
                     width: 17rem;
@@ -146,7 +165,6 @@ a:hover {
             }
 
             .intro-text {
-                flex: 1;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
