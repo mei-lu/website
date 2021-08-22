@@ -76,6 +76,26 @@ a:hover {
   transition: all 300ms linear;
 }
 
+.expand-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+  gap: .5rem;
+}
+
+.expand-btn img {
+  width: 1.5rem;
+}
+
 /* Hero */
 .hero {
   height: 100vh;
@@ -243,26 +263,6 @@ a:hover {
 .hero .intro .socials img {
   width: 3.5rem;
   padding: 0.75rem;
-}
-
-.hero .expand-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin-bottom: 1rem;
-  gap: .5rem;
-}
-
-.hero .expand-btn img {
-  width: 1.5rem;
 }
 
 /* Project Section */

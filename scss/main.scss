@@ -75,6 +75,19 @@ a:hover {
 	transition: all 300ms linear;
 }
 
+.expand-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+
+    img {
+        width: 1.5rem;
+    }
+}
+
 /* Hero */
 
 .hero {
@@ -199,19 +212,6 @@ a:hover {
                 width: 3.5rem;
                 padding: 0.75rem;
             }
-        }
-    }
-
-    .expand-btn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 1rem;
-        gap: .5rem;
-
-        img {
-            width: 1.5rem;
         }
     }
 }

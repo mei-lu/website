@@ -12,7 +12,7 @@ head
 .cursor2
 .cursor3
 
-.hero 
+.hero#hero
   // Intro Section
   .intro
     .socials
@@ -43,7 +43,9 @@ head
             
   .expand-btn
     a(href="#proj") see my work
-    img(src="./img/downarrow.svg")
+    a(href="#proj")
+      img(src="./img/downarrow.svg")
+
   // End Intro Section
 
 // Project Section
@@ -67,7 +69,13 @@ head
       .label-group
         .proj-label Web
       .proj-descrip A web platform collecting hundreds in donations for Feeding America in and displayed live stats. Made for a Chinese Student Association event that attracted more than 100 attendees.
-    
+  
+  .expand-btn
+    a(href="#hero")
+      img(src="./img/uparrow.svg")
+    a(href="#hero") to top
+
+// Footer
 .footer
   span Copyright © 2021 Mei Lu. All Rights Reserved.
 
